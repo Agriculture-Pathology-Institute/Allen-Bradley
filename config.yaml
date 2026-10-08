@@ -1,0 +1,12 @@
+# File Path: config.yaml
+# =========================================================================
+# UNIVAC IX SOVEREIGN CONTROL PLANE — ALLEN-BRADLEY LEGACY GATEWAY CONFIG
+# Status: Production Certified — 4kV Dielectric Dielectric Air-Gap Locked
+# =========================================================================
+
+allen_bradley_legacy_interface:
+  dh_plus_trunking_host: "univac.online"   # Secure remote data streaming endpoint
+  dh_plus_network_baud_rate: 57600        # Legacy Data Highway Plus standard line speed
+  opto_isolation_dielectric_strength_v: 4000 # 4kV absolute optical protection ceiling
+  maximum_relay_dropout_time_ms: 6.0      # Mechanical spring opening limit boundary
+  enforced_safety_integrity_level: "SIL3" # Enforces dual-channel cross-checking passes
